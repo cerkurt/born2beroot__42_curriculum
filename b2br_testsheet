@@ -1,0 +1,68 @@
+
+# THIS DOCUMENT CONTAINS SERIES OF COMMANDS TO BE HELPFUL DURING THE EVALUATION #
+
+# CHECK FOR SYSTEM INTERFACE
+"ls /usr/bin/*session"	--- expected output is /usr/bin/dbus-run-session which states no graphic interface
+
+# FIREWALL CHECK
+dpkg -s ufw
+sudo ufw status
+sudo ufw allow "portno"
+sudp ufw status numbered
+sudo ufw delete num_rule
+sudo ufw delete *number*
+
+# SSH CHECK
+which ssh
+sudo service ssh status
+
+# OS INFO
+uname -v
+
+# PASSWORD EDITS
+nano /etc/login.defs
+nano /etc/pam.d/common-password
+
+# GROUPS AND USERS
+sudo getent group sudo user42
+
+# ADD NEW USER
+sudo adduser "your_intra_here"
+
+# ADD NEW GROUP
+sudo addgroup evaluating
+
+# ADD USER TO THE NEW GROUP
+sudo adduser "your_name_here" evaluating
+
+# CHECK HOSTNAME
+hostname
+
+# CHANGE HOSTNAME
+sudo nano /etc/hostname		--- replace the hostname with the desired new name.
+sudo nano /etc/hosts
+sudo reboot
+hostname
+
+# CHECK PARTITIONS
+lsblk
+
+# CHECK SUDO
+which sudo
+
+# NEW USER TO THE SUDO GROUP
+sudo adduser "your_name_here" sudo
+getent group sudo
+
+# CHECK SUDO RULES
+nano  /etc/sudoers.d/sudo_config
+
+# CHECK SUDO LOGS
+ls /var/log/sudo
+cat /var/log/sudo/sudo_config
+
+# CHECK CRONTAB
+sudo crontab -u root -e
+
+# SNAPSHOT TRACK
+VBoxManage snapshot "machine_name_here" list
