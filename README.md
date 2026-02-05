@@ -24,8 +24,6 @@ Unlike coding projects, Born2beRoot focuses on
 
 ## Project Objectives
 
-By completing this project, I learned how to:
-
 - Create and manage a **virtual machine**
 - Install and configure a **minimal Linux server**
 - Use **LVM (Logical Volume Manager)** with encrypted partitions
