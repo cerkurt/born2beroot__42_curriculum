@@ -1,11 +1,11 @@
-aThis project has been created as part of the 42 curriculum by **cerkurt**.
+This project has been created as part of the 42 curriculum by **cerkurt**.
 
 ---
 
 ## Description
 
 **Born2beRoot** is a system administration project focused on **virtualization
-Linux system configuration, and security fundamentals**.
+Linux system configuration and security fundamentals**.
 
 The goal of this project is to create a **secure virtual server** using
 **VirtualBox** and a minimal Linux distribution
