@@ -148,6 +148,4 @@ Displayed information:
 ```text
 .
 ├── README.md
-├── b2br_testsheet
-└── signature.txt# born2beroot__42_curriculum
-Create a secure virtual server using VirtualBox and a minimal Linux distribution.
+└──b2br_testsheet
